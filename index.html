@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="calculator.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Calculator</title>
-  </head>
-  <body>
-    <h2>Calculator</h2>
-     
-      <div class="container">
-        <div id="display"></div>
-        <div class="buttons">
-          <div class="button">C</div>
-          <div class="button">CE</div>
-          <div class="button">%</div>
-          <div class="button">/</div>
-          <div class="button">sin</div>
-          <div class="button">7</div>
-          <div class="button">8</div>
-          <div class="button">9</div>
-          <div class="button">*</div>
-          <div class="button">cos</div>
-          <div class="button">4</div>
-          <div class="button">5</div>
-          <div class="button">6</div>
-          <div class="button">-</div>
-          <div class="button">tan</div>
-          <div class="button">1</div>
-          <div class="button">2</div>
-          <div class="button">3</div>
-          <div class="button">+</div>
-          <div class="button">sqrt</div>
-          <div class="button left">0</div>
-          <div class="button ">00</div>
-          <div class="button ">.</div>
-          <div class="button ">pi</div>
-          <div id="equal" class="button right">=</div>
-        
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="calculator.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    
+    <main>
+      <section class="calculator-container">
+        <div class="calculator-display" aria-live="polite">0</div>
+        <div class="calculator-buttons">
+          <div class="calculator-buttons-left">
+            <button class="button" id="radian">Radian</button>
+            <button class="button" id="degree">Degree</button>
+            <button class="button" id="factorial">x!</button>
+            <button class="button" id="open-parenthesis">(</button>
+            <button class="button" id="close-parenthesis">)</button>
+            <button class="button" id="percent">%</button>
+            <button class="button" id="clear">AC</button>
+            <button class="button" id="reciprocal">1/x</button>
+            <button class="button" id="sin">sin</button>
+            <button class="button" id="log">log</button>
+            <button class="button" id="number7">7</button>
+            <button class="button" id="number8">8</button>
+            <button class="button" id="number9">9</button>
+            <button class="button" id="divide">/</button>
+            <button class="button" id="pi">π</button>
+            <button class="button" id="cos">cos</button>
+            <button class="button" id="log10">log10</button>
+            <button class="button" id="number4">4</button>
+            <button class="button" id="number5">5</button>
+            <button class="button" id="number6">6</button>
+            <button class="button" id="multiply">*</button>
+            <button class="button" id="e">e</button>
+            <button class="button" id="tan">tan</button>
+            <button class="button" id="square-root">sqrt</button>
+            <button class="button" id="number1">1</button>
+            <button class="button" id="number2">2</button>
+            <button class="button" id="number3">3</button>
+            <button class="button" id="subtract">-</button>
+            <button class="button" id="ans">Ans</button>
+            <button class="button" id="exponent">exp</button>
+            <button class="button" id="power">x^y</button>
+            <button class="button" id="number0">0</button>
+            <button class="button" id="decimal">.</button>
+            <button class="button" id="equal">=</button>
+            <button class="button" id="add">+</button>
+          </div>
+          <div class="calculator-history">
+            <div class="calculator-history-text">History</div>
+            <hr>
+            <div class="calculator-history-list"></div>
+            <button class="calculator-history-clear">Clear</button>
+          </div>
         </div>
-      </div>
-    <script src="script.js"></script>
-  </body>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2024 Harshraj G. All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.2.0/math.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
